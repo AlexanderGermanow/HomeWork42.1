@@ -3,7 +3,7 @@ package lesson7;
 import java.util.Random;
 import java.util.Scanner;
 
-public class CannonShot {
+public class CanonnShot {
     public static void main(String[] args) {
         Random random = new Random();
         Scanner scanner = new Scanner(System.in);

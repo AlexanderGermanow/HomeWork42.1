@@ -8,6 +8,6 @@ public class Exe5 {
 //    } else {
 //            System.out.println("It's NOT hot");
 //        }
-        System.out.println(t > 28? "It's hot" : "It's NOT hot");
+        System.out.println((t > 28)? "It's hot" : "It's NOT hot");
     }
 }

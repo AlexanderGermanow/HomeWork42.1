@@ -1,11 +1,11 @@
 package lesson4;
+import java.util.Scanner;
 
 /** AIT-TR, Java Basic, cohort42.1, hw #4
  *
  * @author Alexander Germanow
  * @version 31-Jan-24
  */
-import java.util.Scanner;
 
 public class HomeWork4 {
     public static void main(String[] args) {
