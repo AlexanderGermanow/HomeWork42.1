@@ -49,25 +49,33 @@ public class HomeWork12 {
             System.out.print(numbers[i] + " ");
         }
         System.out.println("");
-        System.out.println(" ");
+        System.out.println("Enter a number from 1 to 50");
         int serchNumber = new Scanner(System.in).nextInt();
 
         for (int i = 0; i < numbers.length; i++) {
             if (serchNumber == numbers[i]) {
-                System.out.println(" ");
+                System.out.println("Attempt number - " + (i + 1));
                 System.out.println("WOU! - " + serchNumber);
                 break;
             }
         }
+        System.out.println("binary search");
         int first = numbers[0];
         int last = numbers[numbers.length-1];
         int middle;
+        int j = 0;
 
         do {
+            System.out.println("Attempt number - " + (j + 1));
             middle = (first + last)/2;
             if(middle == serchNumber) {
                 System.out.println("WOU! - " + serchNumber);
+            } else if (serchNumber < middle) {
+                last = middle;
+            } else {
+                first = middle;
             }
+            j++;
 
         }while (serchNumber != middle);
     }
