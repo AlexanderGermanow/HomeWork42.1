@@ -3,7 +3,7 @@ package lesson12;
 import java.util.Arrays;
 
 /**
- * AIT-TR, cohort 42.1, Java Basic, Lesson #10
+ * AIT-TR, cohort 42.1, Java Basic, Lesson #12
  *
  * @author Alexander Germanow
  * @version 09-Feb-24

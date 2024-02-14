@@ -26,6 +26,7 @@ public class HomeWork9 {
         // task #4
         System.out.println(Arrays.toString(calculateArray(array)));
     }
+
     static void task1(int n) {
         for (int i = 1; i <= n; i++) {
             System.out.println("Task" + i);
@@ -36,9 +37,9 @@ public class HomeWork9 {
         printArray(a, true);
     }
 
-   static void printArray(int[] a, boolean reverseDirection) {
+    static void printArray(int[] a, boolean reverseDirection) {
         if (reverseDirection) {
-            for (int i = a.length -1; i > -1; i--) {
+            for (int i = a.length - 1; i > -1; i--) {
                 System.out.println(a[i] + " ");
             }
         } else {
@@ -46,21 +47,24 @@ public class HomeWork9 {
                 System.out.println(i + " ");
             }
         }
-       System.out.println();
-   }
+        System.out.println();
+    }
 
-   static double[] calculateArray(int[] a) {
-       int max = a[0];
-       int min = a[0];
-       double sum = 0;
-       for (int i : a) {
-           sum += i;
-           if (i > max) {
-               min = i;
-           }
-       }
-       double[] result = {min, max, sum / a.length};
-       return result;
-   }
+    static double[] calculateArray(int[] a) {
+        int max = a[0];
+        int min = a[0];
+        double sum = 0;
+        for (int i : a) {
+            sum += i;
+            if (i > max) {
+                min = i;
+            }
+        }
+        double[] result = {min, max, sum / a.length};
+        return result;
+    }
+
+    public static int[] createRandomArray(int i, int i1) {
+    }
 }
 
