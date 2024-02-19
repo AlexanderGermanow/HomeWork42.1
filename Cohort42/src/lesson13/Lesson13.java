@@ -12,7 +12,7 @@ import lesson9.HomeWork9;
 
 public class Lesson13 {
     public static void main(String[] args) {
-        int[] array = HomeWork9.createRandomArray(1000000, 100);
+        int[] array = HomeWork9.createRandomArray(100_000, 100);
 
         long startTime = System.currentTimeMillis();
         System.out.println(HomeWork12.linearSearch(array, 45));

@@ -1,6 +1,7 @@
 package lesson9;
 
 import java.util.Arrays;
+import java.util.Random;
 
 /**
  * AIT-TR, cohort 42.1, Java Basic, hw #9
@@ -10,6 +11,14 @@ import java.util.Arrays;
  */
 
 public class HomeWork9 {
+    public static int[] createRandomArray(int len, int bound) {
+        int[] a = new int[len];
+        Random random = new Random();
+        for (int i = 0; i < a.length; i++) {
+            a[i] = random.nextInt(bound);
+        }
+        return a;
+    }
     public static void main(String[] args) {
         int[] array = {1, 2, 3, 4, 5, 6};
 
@@ -63,8 +72,6 @@ public class HomeWork9 {
         double[] result = {min, max, sum / a.length};
         return result;
     }
-
-    public static int[] createRandomArray(int i, int i1) {
-    }
 }
+
 

@@ -4,6 +4,9 @@ import extend.Stack;
 import lesson9.HomeWork9;
 
 import java.util.Arrays;
+
+import static lesson9.HomeWork9.*;
+
 /**
  * AIT-TR, cohort 42.1, Java Basic, hw #12
  *
@@ -14,7 +17,7 @@ import java.util.Arrays;
 public class HomeWork12 {
     public static void main(String[] args) {
         // task #1
-        int[] array = HomeWork9.createRandomArray(25, 22);
+        int[] array = HomeWork9.createRandomArray(25, 25);
         System.out.println(Arrays.toString(array));
         System.out.println(linearSearch(array, 6));
         System.out.println(linearSearch(new int[]{1, 2, 3}, 4));
@@ -54,14 +57,14 @@ public class HomeWork12 {
             if (a[middle] > n) {
                 right = middle;
             } else {
-                left = middle
+                left = middle;
             }
         }
         return  -1;
     }
 
     public static void selectionSort(int[] a) {
-        for (int i = 0; i < a.length -1, i++) {
+        for (int i = 0; i < a.length -1; i++) {
             int min = a[i +1];
             int minIdx = i +1;
             for (int j = i +1; j < a.length - 1; j++) {
