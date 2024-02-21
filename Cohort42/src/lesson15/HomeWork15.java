@@ -8,6 +8,23 @@ package lesson15;
  */
 public class HomeWork15 {
     public static void main(String[] args) {
-        Car car = new Car("white", "Jeep", 40,  300);
+        // task #1
+        Cat cat = new Cat();
+        System.out.println(cat.status());
+        cat.eat(10);
+        cat.walk();
+        cat.run();
+        System.out.println(cat.status());
+        cat.walk();
+        System.out.println(cat.status());
+        Cat newCat = new Cat();
+        System.out.println(newCat.status());
+
+        // task #2
+        Car car = new Car(5, 30);
+        if (car.startEngine()) {
+            System.out.println("Drive: " + car.drive(50));
+            System.out.println("Fuel: " + car.fuel);
+        }
     }
 }

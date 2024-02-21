@@ -1,6 +1,6 @@
-package lesson15;
+package lesson15.homework;
 
-public class Car {
+public class car {
 
     double fuel;
 
@@ -8,7 +8,7 @@ public class Car {
 
     boolean engineOn;
 
-    public Car (double fuel, double maxFuel) {
+    public car(double fuel, double maxFuel) {
         this.fuel = fuel;
         this.maxFuel = maxFuel;
         this.engineOn = false;
@@ -17,7 +17,7 @@ public class Car {
     public void refuel(double fuel) {
         if (this.fuel + fuel > maxFuel) {
             this.fuel = maxFuel;
-            return;
+        return;
         }
         this.fuel += fuel;
     }
@@ -26,7 +26,7 @@ public class Car {
         if (!engineOn) {
             return 0;
         }
-        // TODO recalculate real distance if fuel not enougth
+        // TODO recalculate real distance if fuel not enought
         fuel -= 0.05 * distance;
         return distance;
     }
@@ -36,4 +36,3 @@ public class Car {
         return engineOn;
     }
 }
-
