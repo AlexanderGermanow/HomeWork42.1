@@ -1,9 +1,9 @@
 package lesson16;
 
 public class Cat {
-    int maxVolume;
+    public int maxVolume;
 
-    int realVolume;
+    public int realVolume;
 
     public Cat(int maxVolume) {
         this.maxVolume = maxVolume;
@@ -11,6 +11,7 @@ public class Cat {
     }
 
     public void eat(Plate plate) {
+        // a cat can't eat more thanit can eat (maxVolume);
         int food = plate.amountFood();
         if (food > maxVolume - realVolume) {
             food = maxVolume - realVolume;

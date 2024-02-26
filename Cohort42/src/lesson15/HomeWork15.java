@@ -1,7 +1,7 @@
 package lesson15;
 
 /**
- * AIT-TR, cohort 42.1, Java Basic, Lesson #13
+ * AIT-TR, cohort 42.1, Java Basic, Lesson #15
  *
  * @author Alexander Germanow
  * @version 17-Feb-24
