@@ -17,7 +17,7 @@ public class Lesson18 {
         Robot robot = new Robot(8);
         System.out.println(robot);
         System.out.println(Robot.getCount());
-        System.out.println(robot.add(2, 2));
+        System.out.println(Robot.add(2, 2));
         robot.addAndSave(5);
         robot.addAndSave(12);
         System.out.println(robot.getSum());
