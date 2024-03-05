@@ -10,6 +10,7 @@ public class Variables {
         }
         // transform 'a' -> 0
         int idx = varName.charAt(0) - 'a';
+        // return value
         return values[idx];
     }
 

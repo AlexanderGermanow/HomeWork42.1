@@ -1,5 +1,7 @@
 package lesson19;
 
+import java.util.Arrays;
+
 public class RubberArray {
 
     private final int INIT_LIST_SIZE = 10;
