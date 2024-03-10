@@ -3,7 +3,6 @@ package lesson21.test;
 import extend.Calculate;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
 public class CalculateTest {
 
     private final int EXPECTED_INT = 5;

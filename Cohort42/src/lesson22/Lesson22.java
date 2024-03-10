@@ -14,7 +14,7 @@ public class Lesson22 {
         horse.run();
         horse.walk();
 
-        Pegas pegas = new Pegas("Pegs");
+        Pegas pegas = new Pegas("Pegas");
         System.out.println(pegas);
         pegas.run();
         pegas.walk();

@@ -4,6 +4,7 @@ import extend.Variables;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+
 public class VariablesTest {
 
     @Test

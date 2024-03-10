@@ -7,9 +7,9 @@ public class Pegas extends Horse {
         super(name);
     }
 
-   // public void hidden() {
-   //     super.hidden();
-   // }
+     public void hidden() {
+         super.hidden();
+     }
 
     public void fly() {
         System.out.println("fly...");
