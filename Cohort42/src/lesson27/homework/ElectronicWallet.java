@@ -2,20 +2,23 @@ package lesson27.homework;
 
 public class ElectronicWallet implements PaymentSystem {
     private double money;
-    public void transferMoney(double debet, double credit, BankAccount account) {
-
+    @Override
+    public void transferMoney(double debet, double credit, PaymentSystem wallet) {
+        // TODO implements like bankAccount
     }
 
     @Override
-    public void depositMoney(double)
+    public void depositMoney(double money) {
+        this.money += money;
+    }
 
     @Override
-    public void withdrawMoney(doube money) {
-
+    public void withdrawMoney(double money) {
+        this.money -= money;
     }
 
     @Override
     public double checkBalance() {
-        return 0;
+        return money;
     }
 }
