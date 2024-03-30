@@ -38,7 +38,7 @@ public class RubberArray {
         // TODO implement
     }
 
-    public void remove ( int idx){
+    public void remove(int idx) {
         // move elements right to left from idx
         for (int i = idx; i < data.length - 1; i++) {
             data[i] = data[i + 1];
@@ -46,16 +46,16 @@ public class RubberArray {
         length--;
     }
 
-        @Override
-        public String toString () {
-            // TODO use StringBuilder instead of String
-            String str = "[";
-            for (int i = 0; i < length; i++) {
-                str += String.valueOf(data[i]);
-                if (i < length - 1) {
-                    str += ", ";
-                }
+    @Override
+    public String toString() {
+        // TODO use StringBuilder instead of String
+        String str = "[";
+        for (int i = 0; i < length; i++) {
+            str += String.valueOf(data[i]);
+            if (i < length - 1) {
+                str += ", ";
             }
-            return str + "]";
+        }
+        return str + "]";
     }
 }

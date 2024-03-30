@@ -17,11 +17,13 @@ public class StudentDAO {
         stmt.executeUpdate("INSERT INTO students (name, group_name) VALUES ('" +
                 student.getName() + "', '" + student.getGroupName() + "')");
     }
-    public readAll() {
+    public void readAll() throws SQLException {
         ResultSet rs = stmt.executeQuery("SELECT * FROM students;");
         while (rs.next()) {
             System.out.println(
                     rs.getInt("id") + ", " +
                             rs.getString("name") + ", " + rs.getString("group_name"));
+
+        }
     }
 }

@@ -1,4 +1,4 @@
-package lesson21.test;
+package lesson21;
 
 import extend.Calculate;
 import org.junit.jupiter.api.Assertions;
