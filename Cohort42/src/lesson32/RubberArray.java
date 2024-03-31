@@ -1,24 +1,25 @@
-package lesson19;
+package lesson32;
 
-public class RubberArray {
+public class RubberArray<E> {
+
     private final int INIT_DATA_SIZE = 10;
-    private final float RESIZE_KOEF = 1.5f;
-    private int[] data;
+    private final float EXTEND_INDEX = 1.5f;
+    private Object[] data;
     private int length;
 
     public RubberArray() {
-        data = new int[INIT_DATA_SIZE];
+        data = new Object[INIT_DATA_SIZE];
         length = 0;
     }
 
-    public int get(int idx) {
-        return data[idx];
+    public E get(int idx) {
+        return (E) data[idx];
     }
 
-    public void add(int value) {
+    public void add(E value) {
         if (length == data.length) {
             // create new array, length *= 1.5
-            int[] newData = new int[(int) (data.length * RESIZE_KOEF)];
+            Object[] newData = new Object[(int)(data.length * EXTEND_INDEX)];
             // move all items to new array
             for (int i = 0; i < data.length; i++) {
                 newData[i] = data[i];
@@ -31,7 +32,7 @@ public class RubberArray {
         length++;
     }
 
-    public void add(int value, int idx) {
+    public void add(E value, int idx) {
         // TODO implement
     }
 
@@ -43,16 +44,28 @@ public class RubberArray {
         length--;
     }
 
-    @Override
-    public String toString() {
-        // TODO use StringBuilder instead of String
-        String str = "[";
+    public boolean contains(E value) {
+        return indexOf(value) != -1;
+    }
+
+    public int indexOf(E value) {
         for (int i = 0; i < length; i++) {
-            str += String.valueOf(data[i]);
-            if (i < length - 1) {
-                str += ", ";
+            if (data[i] == value) {
+                return i;
             }
         }
-        return str + "]";
+        return -1;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder("[");
+        for (int i = 0; i < length; i++) {
+            sb.append(data[i]);
+            if (i < length - 1) {
+                sb.append(", ");
+            }
+        }
+        return sb.append("]").toString();
     }
 }

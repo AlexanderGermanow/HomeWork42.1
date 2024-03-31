@@ -1,6 +1,7 @@
 package lesson29.homework;
 
 import org.w3c.dom.Node;
+
 public class RubberList {
     private int size = 0;
     private Node first;

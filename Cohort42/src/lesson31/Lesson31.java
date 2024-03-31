@@ -22,15 +22,14 @@ import java.util.Random;
  */
 public class Lesson31 extends JFrame {
     private Random random;
-    private final Color[] COLORS = {Color.red, Color.green, Color.blue,
-    Color.yellow, Color.magenta};
+    private final Color[] COLORS = {Color.red, Color.green, Color.blue, Color.yellow, Color.magenta};
     private int CIRCLE_COUNT = 100;
 
     public static void main(String[] args) {
         new Lesson31();
     }
 
-    public Lesson31() {
+    public Lesson31()  {
         setTitle("Hello, Swing!");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(500, 500);

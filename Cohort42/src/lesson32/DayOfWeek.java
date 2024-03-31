@@ -1,5 +1,5 @@
 package lesson32;
 
-public enum Day {
+public enum DayOfWeek {
     MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY;
 }

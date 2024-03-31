@@ -1,7 +1,5 @@
 package lesson19.homework;
 
-import java.util.Arrays;
-
 public class RubberArray {
 
     private final int INIT_DATA_SIZE = 10;
@@ -12,6 +10,10 @@ public class RubberArray {
     public RubberArray() {
         data = new int[INIT_DATA_SIZE];
         length = 0;
+    }
+
+    public int size() {
+        return length;
     }
 
     public int get(int idx) {
@@ -39,6 +41,9 @@ public class RubberArray {
     }
 
     public void add(int value, int idx) {
+        if (idx > length) {
+            throw new IndexOutOfBoundsException();
+        }
         extendArrayIfNeed();
         // insert value
         // 0;1;2;3;4;5
@@ -47,12 +52,14 @@ public class RubberArray {
         for (int i = length; i > idx; i--) {
             data[i] = data[i - 1];
         }
-        System.out.println(Arrays.toString(data));
         data[idx] = value;
         length++;
     }
 
     public void remove(int idx) {
+        if (idx > length) {
+            throw new IndexOutOfBoundsException();
+        }
         // move elements right to left from idx
         for (int i = idx; i < data.length - 1; i++) {
             data[i] = data[i + 1];

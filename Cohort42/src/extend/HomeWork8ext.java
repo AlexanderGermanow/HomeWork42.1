@@ -2,7 +2,7 @@ package extend;
 
 import java.util.Arrays;
 /**
- * AIT-TR, cohort 42.1, Java Basic, hw #9 ext
+ * AIT-TR, cohort 42.1, Java Basic, hw #8 ext
  *
  * @author Alexander Germanow
  * @version 29-Feb-24

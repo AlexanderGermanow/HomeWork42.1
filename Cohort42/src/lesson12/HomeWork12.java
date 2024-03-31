@@ -1,12 +1,9 @@
 package lesson12;
 
-import extend.Stack;
+import extend.SimpleStack;
 import lesson9.HomeWork9;
 
 import java.util.Arrays;
-
-import static lesson9.HomeWork9.*;
-
 /**
  * AIT-TR, cohort 42.1, Java Basic, hw #12
  *
@@ -27,29 +24,29 @@ public class HomeWork12 {
         System.out.println(Arrays.toString(array));
 
         // task #3
-        System.out.println(binarySearch(array,8));
+        System.out.println(binarySearch(array, 8));
 
         // task #4
-        Stack.push(12);
-        Stack.push(8);
-        Stack.push(-3);
-        System.out.println(Stack.arrayToString());
-        System.out.println(Stack.pop());
-        System.out.println(Stack.arrayToString());
+        SimpleStack.push(12);
+        SimpleStack.push(8);
+        SimpleStack.push(-3);
+        System.out.println(SimpleStack.arrayToString());
+        System.out.println(SimpleStack.pop());
+        System.out.println(SimpleStack.arrayToString());
     }
 
     public static int linearSearch(int[] a, int n) {
         for (int i = 0; i < a.length; i++) {
             if (a[i] == n) {
-                return  i;
+                return i;
             }
         }
-        return  -1;
+        return -1;
     }
 
     public static int binarySearch(int[] a, int n) {
-        int left = 0, right = a.length -1;
-        while (left +1 != right) {
+        int left = 0, right = a.length - 1;
+        while (left + 1 != right) {
             int middle = left + (right - left) / 2;
             if (a[middle] == n) {
                 return middle;
@@ -60,14 +57,14 @@ public class HomeWork12 {
                 left = middle;
             }
         }
-        return  -1;
+        return -1;
     }
 
     public static void selectionSort(int[] a) {
-        for (int i = 0; i < a.length -1; i++) {
-            int min = a[i +1];
-            int minIdx = i +1;
-            for (int j = i +1; j < a.length - 1; j++) {
+        for (int i = 0; i < a.length - 1; i++) {
+            int min = a[i + 1];
+            int minIdx = i + 1;
+            for (int j = i + 1; j < a.length; j++) {
                 if (a[j] < min) {
                     min = a[j];
                     minIdx = j;
