@@ -1,4 +1,4 @@
-package numbre4;
+package number4;
 
 import javax.swing.*;
 import java.awt.*;

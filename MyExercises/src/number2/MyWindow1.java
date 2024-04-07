@@ -1,14 +1,13 @@
-package numbre3;
+package number2;
 
 import javax.swing.*;
-import java.awt.*;
 
-public class MyWindow2 extends JFrame {
-    public MyWindow2() {
-        setBounds(500, 500, 500, 300);
-        setTitle("FlowLayoutDemo");
+public class MyWindow1 extends JFrame {
+    public MyWindow1() {
+        setBounds(500,500,500,300);
+        setTitle("BoxLayoutDemo");
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        setLayout(new FlowLayout());
+        setLayout(new BoxLayout(getContentPane(), BoxLayout.X_AXIS));
         for (int i = 1; i <= 10; i++) {
             add(new JButton("#" + i));
         }
@@ -16,6 +15,6 @@ public class MyWindow2 extends JFrame {
     }
 
     public static void main(String[] args) {
-        new MyWindow2();
+        new MyWindow1();
     }
 }
