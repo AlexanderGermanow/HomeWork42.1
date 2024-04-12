@@ -7,12 +7,12 @@ import java.util.Map;
 
 public class PhoneBook {
 
-    private Map<String, List<Integer>> pb =new HashMap<>();
+    private Map<String, List<Integer>> pb = new HashMap<>();
 
     public void add(String name, int phone) {
         List<Integer> phones = new pb.get(name);
         if (phones == null) {
-            phones == new ArrayList<>(List.of(phone));
+            phones = new ArrayList<>(List.of(phone));
             pb.put(name, phones);
         } else {
             phones.add(phone);
