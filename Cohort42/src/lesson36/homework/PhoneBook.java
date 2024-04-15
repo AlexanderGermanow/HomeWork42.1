@@ -6,11 +6,10 @@ import java.util.List;
 import java.util.Map;
 
 public class PhoneBook {
-
     private Map<String, List<Integer>> pb = new HashMap<>();
 
     public void add(String name, int phone) {
-        List<Integer> phones = new pb.get(name);
+        List<Integer> phones = pb.get(name);
         if (phones == null) {
             phones = new ArrayList<>(List.of(phone));
             pb.put(name, phones);
