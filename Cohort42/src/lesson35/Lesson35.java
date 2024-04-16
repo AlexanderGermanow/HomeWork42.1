@@ -5,7 +5,7 @@ import lesson34.Person;
 import java.util.*;
 
 /**
- * AIT-TR, cohort 42.1, Java Basic, Lesson #34
+ * AIT-TR, cohort 42.1, Java Basic, Lesson #35
  *
  * @author Alexander Germanow
  * @version 8-Apr-24
