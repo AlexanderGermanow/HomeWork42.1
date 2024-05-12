@@ -1,6 +1,5 @@
 package lesson41.homework.controller;
 
-import lesson41.homework.service.BookService;
 import java.util.Scanner;
 
 public class BookController {
