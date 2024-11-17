@@ -7,4 +7,14 @@ public class BookService {
 
     public void add(String name) {
     }
-}
+
+    public boolean delete(int id) {
+
+        return false;
+    };
+
+    public void print() {
+    }
+
+    //public void print() {
+    };
